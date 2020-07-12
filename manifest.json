@@ -1,36 +1,28 @@
 {
-    "manifest_version": 1,
-    "name": "财富查看器",
-    "version": "1.0.0",
-    "description": "查看财富状况",
-    "icons": {
-        "128": "icons/icon128x128.jpg"
-    },
-    "author": "老周",
-  
-    "browser_action": {
-        "default_title": "财富-browser",
-          "default_popup": "pages/popup/popup.html"
-    },
-    "page_action": {
-        "default_title": "财富-page",
-          "default_popup": "pages/popup/popup.html"
-    },
-  
-    "background": {
-      "persistent": false
-    },
-    "chrome_url_overrides": {
-        "pageToOverride": "newtab.html"
-    },
-    "homepage_url": "http://baidu.com",
-    "offline_enabled": true,
-    "optional_permissions": ["tabs", "geolocation"],
-    "options_ui": {
-      "chrome_style": true,
-      "page": "pages/options/options.html",
-      "open_in_tab": true
-    },
-    "permissions": ["tabs", "geolocation"],
-    "short_name": "Short Name"
-  }
+  "manifest_version": 2,
+  "name": "财富查看器",
+  "version": "1.0.0",
+  "description": "查看财富状况",
+  "icons": {
+    "128": "icons/icon128x128.jpg"
+  },
+  "author": "老周",
+
+  "browser_action": {
+    "default_title": "财富-browser",
+    "default_popup": "pages/popup/popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "pages/newtab/newtab.html"
+  },
+  "homepage_url": "http://baidu.com",
+  "offline_enabled": true,
+  "optional_permissions": ["tabs", "geolocation"],
+  "options_ui": {
+    "chrome_style": true,
+    "page": "pages/options/options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["tabs", "geolocation"],
+  "short_name": "Short Name"
+}
